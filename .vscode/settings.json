@@ -1,0 +1,4 @@
+{
+    "python.analysis.extraPaths": ["${workspaceFolder}/gem5/src/python"],
+    "python.envFile": "${workspaceFolder}/.env"
+}

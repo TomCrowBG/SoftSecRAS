@@ -1,0 +1,10 @@
+# ignore vscode settings
+.vscode/
+.env
+
+# ignore all gem5 output directories
+**/m5out*/
+
+# ignore python caches
+**/__pycache__/
+**/*.pyc
