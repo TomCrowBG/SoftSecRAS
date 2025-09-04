@@ -1,5 +1,6 @@
 # SoftSecRAS
 Hardware protected return address stack to protect against ROP attacks simulated in gem5
+
 Tom Maxellon 2025
 
 ## Preparations
@@ -32,13 +33,13 @@ If you now want to run a script, use:
 
 If you want to recreate a workspace within vscode to develop for gem5, add these files:
 
-.env file for python environment variables:
+For python environment variables - .env`:
 
 ```markdown
 PYTHONPATH=${workplaceFolder}/gem5/src/python:$PYTHONPATH
 ```
 
-.vscode/settings.json file for vscode settings:
+For vscode settings - `.vscode/settings.json`:
 
 ```markdown
 {
