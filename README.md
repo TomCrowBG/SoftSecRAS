@@ -33,7 +33,7 @@ If you now want to run a script, use:
 
 If you want to recreate a workspace within vscode to develop for gem5, add these files:
 
-For python environment variables - .env`:
+For python environment variables - `.env`:
 
 ```markdown
 PYTHONPATH=${workplaceFolder}/gem5/src/python:$PYTHONPATH
