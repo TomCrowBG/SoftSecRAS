@@ -1,0 +1,21 @@
+[
+    {
+        "category": "binary",
+        "id": "[ID]",
+        "description": "[ID]",
+        "architecture": "X86",
+        "size": 1,
+        "tags": [],
+        "is_zipped": false,
+        "md5sum": "md5sum [FILENAME]",
+        "source": "",
+        "url": "file://__BINARY_PATH__/[FILENAME]",
+        "code_examples": [],
+        "license": "",
+        "author": [],
+        "source_url": "",
+        "resource_version": "1.0.0",
+        "gem5_versions": [],
+        "example_usage": "obtain_resource(resource_id=\"[ID]\")"
+    }
+]
