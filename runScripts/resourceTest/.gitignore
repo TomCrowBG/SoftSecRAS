@@ -1,3 +1,4 @@
 # ignore generated files
-.gem5-config.json
-.local_resources.json
+gem5_config.json
+local_resources.json
+pattern

@@ -17,4 +17,8 @@ sed "s|__BINARY_PATH__|$SCRIPT_DIR|g" \
 # Local resource path
 export GEM5_CONFIG=$SCRIPT_DIR/gem5_config.json
 
+# Build resources
+gcc -o pattern.c pattern
+
+# Run gem5
 "$GEM5_DIR"/build/ALL/gem5.opt "$SCRIPT_NAME"
