@@ -1,8 +1,0 @@
-{
-    "sources": {
-        "local_resources": {
-            "url": "/home/tomcrow/repos/SoftSecRAS/runScripts/resourceTest/local_resources.json",
-            "isMongo": false
-        }
-    }
-}
