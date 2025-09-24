@@ -1,0 +1,5 @@
+# ignore generated files
+gem5_config.json
+local_resources.json
+Makefile_template
+m5ops

@@ -5,24 +5,39 @@ cd "$SCRIPT_DIR" || exit 1
 
 
 # Change out this script file name
-SCRIPT_NAME="templateScript.py"
+SCRIPT_NAME="m5ops.py"
+BINARY_NAME="m5ops"
 
 
-# Generate config and local resource file
+# Generate build environment
+sed "s|__GEM5__PATH__|$GEM5_DIR|g" \
+    "$SCRIPT_DIR/Makefile_template" \
+    > "$SCRIPT_DIR/Makefile"
+
+
+# Build resources
+make clean
+make all
+
+
+# Calculate Hash
+MD5SUM_HASH=$(md5sum "$BINARY_NAME")
+
+
+# Generate gem5 configurations
 sed "s|__BINARY_PATH__|$SCRIPT_DIR|g" \
     "$SCRIPT_DIR/gem5_config_template.json" \
     > "$SCRIPT_DIR/gem5_config.json"
 
 sed "s|__BINARY_PATH__|$SCRIPT_DIR|g" \
-    "$SCRIPT_DIR/local_resources_template.json" \
+    "$SCRIPT_DIR/local_resources_template.json" | \
+sed "s|__MD5SUM__|$MD5SUM_HASH|g" \
     > "$SCRIPT_DIR/local_resources.json"
 
 
 # Local resource path
 export GEM5_CONFIG=$SCRIPT_DIR/gem5_config.json
 
-# Build resources
-#make FILE
 
 # Run gem5
-"$GEM5_DIR"/build/ALL/gem5.opt "$SCRIPT_NAME"
+"$GEM5_DIR"/build/ALL/gem5.opt -re "$SCRIPT_NAME"
