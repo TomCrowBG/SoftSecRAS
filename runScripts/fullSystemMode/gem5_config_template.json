@@ -1,0 +1,8 @@
+{
+    "sources": {
+        "local_resources": {
+            "url": "__BINARY_PATH__/local_resources.json",
+            "isMongo": false
+        }
+    }
+}
