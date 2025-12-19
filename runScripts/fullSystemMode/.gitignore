@@ -3,3 +3,4 @@ gem5_config.json
 local_resources.json
 Makefile_template
 m5ops
+ubuntu-22.04.2.raw
