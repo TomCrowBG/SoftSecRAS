@@ -1,0 +1,25 @@
+[
+    {
+        "category": "binary",
+        "id": "riscv-add16-demo",
+        "description": "A demo that runs the ADD16 instruction on the riscv ISA",
+        "architecture": "riscv",
+        "size": 1,
+        "tags": [],
+        "is_zipped": false,
+        "md5sum": "2fcc661cca605fe15074789ea21048b8",
+        "source": "",
+        "url": "file://__BINARY_PATH__/add16_test",
+        "code_examples": [],
+        "license": "",
+        "author": [
+            "Tom Maxellon"
+        ],
+        "source_url": "",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "25.0.0.1"
+        ],
+        "example_usage": "obtain_resource(resource_id=\"riscv-add16-demo\")"
+    }
+]
