@@ -23,32 +23,32 @@ TODO
 
 ### Return Address Stack
 
-[ ] Add memory area
-[ ] Set page table permission flags
+[ ] Add memory area <br />
+[ ] Set page table permission flags <br />
 [ ] Parametrize (optional)
 
 ### Custom MMU
 
-[ ] Create class
-[ ] Add debug info
-[ ] Add Instruction flags
-[ ] Make decoder forward flags
+[ ] Create class <br />
+[ ] Add debug info <br />
+[ ] Add Instruction flags <br />
+[ ] Make decoder forward flags <br />
 [ ] Let RAS flag bypass page table permission
 
 ### Rewrite CALL/RET
 
-[ ] Locate CALL/RET inside of gem5's decoder
-[ ] Add RAS register
-[ ] Implement RAS logic into CALL/RET
-[ ] RAS register bounds
+[ ] Locate CALL/RET inside of gem5's decoder <br />
+[ ] Add RAS register <br />
+[ ] Implement RAS logic into CALL/RET <br />
+[ ] RAS register bounds <br />
 [ ] RAS register out of bounds fault
 
 ### Evaluation
 
-[ ] Find available Shadow Stack implementation
-[ ] Setup binaries
-[ ] Evaluate Security on ROP attacks
-[ ] Setup SPEC benchmark
+[ ] Find available Shadow Stack implementation <br />
+[ ] Setup binaries <br />
+[ ] Evaluate Security on ROP attacks <br />
+[ ] Setup SPEC benchmark <br />
 [ ] Evaluate Performance differences
 
 ## How to work on this repository
